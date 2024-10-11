@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.costa.luiz</groupId>
+    <artifactId>hibernate-reactive</artifactId>
+    <version>0.0.3-SNAPSHOT</version>
+
+    <name>hibernate-reactive</name>
+    <description>Hibernate Reactive</description>
+
+    <properties>
+        <sonar.projectKey>
+            luizgustavocosta_progamacao-reativa-em-java-com-spring-${project.groupId}:${project.artifactId}
+        </sonar.projectKey>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <hibernate-reactive-core.version>1.1.0.Final</hibernate-reactive-core.version>
+        <hibernate-jpamodelgen.version>5.6.1.Final</hibernate-jpamodelgen.version>
+        <hibernate-validator.version>6.2.0.Final</hibernate-validator.version>
+        <glassfish-el.version>4.0.1</glassfish-el.version>
+        <vertx-pg-client.version>4.2.1</vertx-pg-client.version>
+        <log4j.version>2.14.1</log4j.version>
+        <vertx.version>4.2.1</vertx.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.hibernate.reactive</groupId>
+            <artifactId>hibernate-reactive-core</artifactId>
+            <version>${hibernate-reactive-core.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-jpamodelgen</artifactId>
+            <version>${hibernate-jpamodelgen.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>${hibernate-validator.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>jakarta.el</artifactId>
+            <version>${glassfish-el.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-pg-client</artifactId>
+            <version>${vertx-pg-client.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

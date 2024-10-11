@@ -1,0 +1,15 @@
+server:
+  port: 8081
+spring:
+  r2dbc:
+    password: admin
+    username: admin
+    url: r2dbc:h2:mem:///customers
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  h2:
+    console:
+      enabled: true
+  main:
+    banner-mode: off
